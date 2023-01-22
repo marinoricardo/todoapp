@@ -36,7 +36,9 @@ class _HomeState extends State<Home> {
         title: Text('Tarefas'),
         actions: [
           IconButton(
-            onPressed: (() {}),
+            onPressed: (() {
+              Navigator.of(context).pushNamed('/about');
+            }),
             icon: Icon(Icons.more_vert),
           ),
         ],

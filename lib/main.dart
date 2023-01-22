@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/about.dart';
 import 'package:todoapp/home.dart';
 import 'package:todoapp/splash.dart';
 import 'package:todoapp/task_form.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/home': ((context) => const Home()),
         '/addtask': ((context) => const TaskForm()),
         '/splash': ((context) => const Splash()),
+        '/about': ((context) => const About()),
       },
     );
   }
