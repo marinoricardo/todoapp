@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/home.dart';
+import 'package:todoapp/splash.dart';
 import 'package:todoapp/task_form.dart';
 
 void main() {
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
       ),
       // home: const Home(),
-      initialRoute: '/home',
+      initialRoute: '/splash',
       routes: {
         '/home': ((context) => const Home()),
-        '/addtask': ((context) => const TaskForm())
+        '/addtask': ((context) => const TaskForm()),
+        '/splash': ((context) => const Splash()),
       },
     );
   }
