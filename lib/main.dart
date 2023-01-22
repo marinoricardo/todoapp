@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/home.dart';
+import 'package:todoapp/task_form.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: const Home(),
+      // home: const Home(),
+      initialRoute: '/home',
+      routes: {
+        '/home': ((context) => const Home()),
+        '/addtask': ((context) => const TaskForm())
+      },
     );
   }
 }

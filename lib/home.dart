@@ -12,8 +12,11 @@ class Home extends StatelessWidget {
         // leading: IconButton(),
         title: Text('Tarefas'),
       ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed('/addtask');
+          },
+          child: Icon(Icons.add)),
     );
   }
 }
