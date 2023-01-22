@@ -10,14 +10,7 @@ class About extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Sobre o Programador'),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.whatsapp,
-                size: 25,
-              ))
-        ],
+        actions: [],
       ),
       body: Column(
         children: [
