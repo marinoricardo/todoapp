@@ -1,9 +1,20 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_final_fields
 
 import 'package:flutter/material.dart';
+import 'package:todoapp/home.dart';
 
-class TaskForm extends StatelessWidget {
+class TaskForm extends StatefulWidget {
   const TaskForm({Key? key}) : super(key: key);
+
+  @override
+  State<TaskForm> createState() => _TaskFormState();
+}
+
+class _TaskFormState extends State<TaskForm> {
+  TextEditingController _nomeTarefa = TextEditingController();
+  TextEditingController _descricaoTarefa = TextEditingController();
+
+  final List<Tarefa> tarefas = [];
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +35,7 @@ class TaskForm extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20),
             child: TextField(
+              controller: _nomeTarefa,
               decoration: InputDecoration(
                 labelText: 'Nome',
                 border: OutlineInputBorder(),
@@ -34,6 +46,7 @@ class TaskForm extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20, right: 20),
             child: TextField(
+              controller: _descricaoTarefa,
               decoration: InputDecoration(
                 labelText: 'Descrição',
                 border: OutlineInputBorder(),
