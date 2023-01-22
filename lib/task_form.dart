@@ -25,18 +25,20 @@ class TaskForm extends StatelessWidget {
             padding: EdgeInsets.all(20),
             child: TextField(
               decoration: InputDecoration(
-                  labelText: 'Nome',
-                  border: OutlineInputBorder(),
-                  hintText: 'Nome da Tarefa'),
+                labelText: 'Nome',
+                border: OutlineInputBorder(),
+                hintText: 'Nome da Tarefa',
+              ),
             ),
           ),
           Padding(
             padding: EdgeInsets.only(left: 20, right: 20),
             child: TextField(
               decoration: InputDecoration(
-                  labelText: 'Nome',
-                  border: OutlineInputBorder(),
-                  hintText: 'Nome da Tarefa'),
+                labelText: 'Descrição',
+                border: OutlineInputBorder(),
+                hintText: 'Descrição da Tarefa',
+              ),
             ),
           ),
         ],
