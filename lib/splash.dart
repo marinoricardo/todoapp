@@ -11,6 +11,13 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 5))
+        .then((value) => Navigator.of(context).pushNamed('/home'));
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.pink,
