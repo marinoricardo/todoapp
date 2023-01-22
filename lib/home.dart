@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                   value: tarefas[index].done,
                   onChanged: (value) {
                     setState(() {
-                      done = value!;
+                      tarefas[index].done = value!;
                     });
                   }),
             );
