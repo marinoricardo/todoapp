@@ -24,8 +24,8 @@ class About extends StatelessWidget {
                     width: 90,
                     child: CircleAvatar(
                       child: Icon(
-                        Icons.person,
-                        size: 80,
+                        Icons.camera_enhance,
+                        size: 70,
                       ),
                     ),
                   ),
