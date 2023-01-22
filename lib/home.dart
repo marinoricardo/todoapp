@@ -36,8 +36,8 @@ class _HomeState extends State<Home> {
         title: Text('Tarefas'),
       ),
       body: Padding(
-        padding: EdgeInsets.only(left: 10, right: 10, top: 20),
-        child: ListView.builder(
+        padding: EdgeInsets.only(left: 10, right: 10, top: 25),
+        child: ListView.separated(
           itemCount: tarefas.length,
           itemBuilder: (context, index) {
             return ListTile(
@@ -52,6 +52,7 @@ class _HomeState extends State<Home> {
                   }),
             );
           },
+          separatorBuilder: ((context, index) => const Divider()),
         ),
       ),
       floatingActionButton: FloatingActionButton(
