@@ -14,7 +14,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 5))
-        .then((value) => Navigator.of(context).pushNamed('/home'));
+        .then((value) => Navigator.of(context).pushReplacementNamed('/home'));
   }
 
   @override
