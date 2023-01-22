@@ -34,6 +34,12 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         // leading: IconButton(),
         title: Text('Tarefas'),
+        actions: [
+          IconButton(
+            onPressed: (() {}),
+            icon: Icon(Icons.more_vert),
+          ),
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.only(left: 10, right: 10, top: 25),
