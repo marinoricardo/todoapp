@@ -37,6 +37,7 @@ class _TaskFormState extends State<TaskForm> {
             child: TextField(
               controller: _nomeTarefa,
               decoration: InputDecoration(
+                prefixIcon: Icon(Icons.task),
                 labelText: 'Nome',
                 border: OutlineInputBorder(),
                 hintText: 'Nome da Tarefa',
@@ -48,6 +49,7 @@ class _TaskFormState extends State<TaskForm> {
             child: TextField(
               controller: _descricaoTarefa,
               decoration: InputDecoration(
+                prefixIcon: Icon(Icons.description),
                 labelText: 'Descrição',
                 border: OutlineInputBorder(),
                 hintText: 'Descrição da Tarefa',
