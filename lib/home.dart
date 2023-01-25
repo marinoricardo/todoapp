@@ -27,6 +27,51 @@ class _HomeState extends State<Home> {
         nome: "Flutter",
         descricao: "Aprender a desenvolver aplicativos moveis",
         done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "PHP",
+        descricao: "Aprender a desenvolver aplicativos web usando PHP",
+        done: false),
+    Tarefa(
+      nome: "Laravel",
+      descricao: "Aprender a construir Rest API's",
+      done: true,
+    ),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
+    Tarefa(
+        nome: "Flutter",
+        descricao: "Aprender a desenvolver aplicativos moveis",
+        done: false),
   ];
   @override
   Widget build(BuildContext context) {
@@ -51,6 +96,10 @@ class _HomeState extends State<Home> {
             return ListTile(
               title: Text(tarefas[index].nome),
               subtitle: Text(tarefas[index].descricao),
+              leading: Icon(
+                Icons.task,
+                size: 30,
+              ),
               trailing: Checkbox(
                   value: tarefas[index].done,
                   onChanged: (value) {
